@@ -13,6 +13,7 @@ docker run -d \
     action-runner 
 
 echo launch runner configure
+echo NOTICE: makesure to configure _work to $(WORKDIR)/_work so docker-in-docker can work
 docker exec -it \
     --env WORKDIR=$WORKDIR \
     action-runner \
